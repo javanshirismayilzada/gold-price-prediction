@@ -6,9 +6,9 @@ Full write-up: [report.pdf](report.pdf)
 
 ## Data
 
-- Daily gold prices, 2001-04-02 to 2021-01-29 (4,974 rows)
-- Columns: Date, Open, High, Close, Volume
-- Source: [add dataset source/link here]
+- Daily gold futures prices (ticker `GC=F`), 2001-04-02 to 2021-01-29 (4,974 rows)
+- Columns used: Date, Open, High, Close, Volume
+- Source: [Yahoo Finance](https://finance.yahoo.com/quote/GC=F/). The data is not included in this repo. Download the historical data from the **Historical Data** tab for the date range above and save it as `Dataset.csv` in the project folder.
 
 ## Method
 
@@ -32,6 +32,8 @@ Full write-up: [report.pdf](report.pdf)
 - Possible improvements: predict daily changes or returns instead of price levels, fit the scaler on training data only, use walk-forward validation, and compare against ARIMA.
 
 ## Run
+
+Download the dataset as described above, then:
 
 ```bash
 pip install -r requirements.txt
